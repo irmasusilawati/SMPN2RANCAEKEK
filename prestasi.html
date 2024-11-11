@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi - ESDURA</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: white;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav-links {
+            display: inline-block;
+            float: right;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .prestasi-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .prestasi-img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        .prestasi-info {
+            margin-top: 10px;
+        }
+
+        .prestasi-info h2 {
+            margin-bottom: 5px;
+        }
+
+        .prestasi-info p {
+            margin-bottom: 10px;
+        }
+
+        .prestasi-info .date {
+            margin-bottom: 10px;
+        }
+
+        .prestasi-info .date i {
+            margin-right: 5px;
+        }
+
+        .prestasi-info .category {
+            margin-bottom: 10px;
+        }
+
+        .prestasi-info .person {
+            margin-bottom: 10px;
+        }
+
+        .prestasi-info .person i {
+            margin-right: 5px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer div {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .footer h3 {
+            margin-top: 0;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer .social-media a {
+            margin: 0 10px;
+        }
+        .footer .social-media i {
+            font-size: 20px;
+        }
+        .footer-bottom {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .nav-links a {
+                display: inline-block;
+                margin: 5px 0;
+            }
+
+            .prestasi-img {
+                width: 80%;
+                max-width: none;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .prestasi-card {
+                padding: 15px;
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+
+            .footer .social-media a {
+                margin: 5px;
+            }
+
+            .footer-bottom {
+                padding: 15px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .prestasi-img {
+                width: 100%;
+            }
+
+            .prestasi-info {
+                text-align: center;
+            }
+
+            .button {
+                width: 100%;
+                padding: 12px 20px;
+                margin-top: 15px;
+            }
+
+            .footer {
+                padding: 15px 0;
+            }
+
+            .footer-bottom {
+                padding: 10px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="smp.png" alt="Image" height="42" width="42">
+            <img src="esdura.png" alt="Image" height="46" width="100">
+            <nav class="nav-links">
+                <a href="beranda.html">Beranda</a>
+                <a href="">Profil Sekolah</a>
+                <a href="ppdb.html">PPDB</a>
+                <a href="berita.html">Berita</a>
+                <a href="sarana.html">Sarana</a>
+                <a href="ekstrakulikuler">Ekstrakurikuler</a>
+                <a href="prestasi.html">Prestasi</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>PRESTASI</h1>
+
+            <div class="prestasi-card">
+                <center><img src="guru.jpg" alt="Prestasi 1" class="prestasi-img"></center>
+                <div class="prestasi-info">
+                    <h2>Juara........</h2>
+                    <p class="date"><i class="fas fa-calendar-alt"></i> 14 Agustus 2024</p>
+                    <p class="category">Skala Nasional</p>
+                    <p class="person"><i class="fas fa-user"></i> Thaita Azaria</p>
+                </div>
+            </div>
+
+            <div class="prestasi-card">
+                <center><img src="guru.jpg" alt="Prestasi 2" class="prestasi-img"></center>
+                <div class="prestasi-info">
+                    <h2>Juara........</h2>
+                    <p class="date"><i class="fas fa-calendar-alt"></i> 14 Agustus 2024</p>
+                    <p class="category">Skala Nasional</p>
+                    <p class="person"><i class="fas fa-user"></i> Thaita Azaria</p>
+                </div>
+            </div>
+
+            <button class="button">Tampilkan Semua Prestasi</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <img alt="School Logo" height="50" src="esdura.png" width="100"/>
+            <p>Profil Singkat SMP Negeri 2 Rancaekek</p>
+        </div>
+        <div>
+            <h3>Info Kontak</h3>
+            <p>Bojongsalam, Kec. Rancaekek, Kabupaten Bandung, Jawa Barat 40394</p>
+            <p>📞 081394039493</p>
+            <p>✉️ smpn2rancaekek@gmail.com</p>
+        </div>
+        <div class="social-media">
+            <h3>Social Media</h3>
+            <img src="twitter (1).png" alt="Image" height="30" width="30">
+            <img src="instagram.png" alt="Image" height="30" width="30">
+            <img src="facebook.png" alt="Image" height="30" width="30">
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>2024 – SMPN 2 Rancaekek</p>
+    </div>
+</body>
+</html>
